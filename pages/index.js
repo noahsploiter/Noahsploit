@@ -31,15 +31,15 @@ export default function Home({ Allblogs }) {
   return (
     <div className="bg-[#040720] bg-[length:500px_500px] bg-right bg-[url('../public/b.png')] bg-no-repeat   h-full md:h-screen pt-[80px] ">
       <div className="pt-[150px] pl-[20px] h-full">
-        <h1 className="text-5xl font-bold w-[500px]">
+        <h1 className="text-4xl md:text-5xl font-bold w-screen pr-10">
           Providing{" "}
-          <span className="font-extrabold text-transparent text-5xl bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600">
+          <span className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600">
             {" "}
             the best
           </span>{" "}
           building experience
         </h1>
-        <p className="pt-5 text-xl text-gray-400 w-[400px]">
+        <p className="pt-5 text-xl text-gray-400 w-screen pr-10">
           All the best and most modern projects. Access online courses,
           projects, blogs, coding examples, tutorials and much more. All in one
           place
@@ -47,7 +47,9 @@ export default function Home({ Allblogs }) {
       </div>
       <div className="bg-[#040720] pl-[60px] md:pl-[105px] pt-[100px]">
         <h1 className="text-[#3a59e4] text-2xl font-bold">PROJECTS</h1>
-        <h1 className="pt-2 text-5xl font-extrabold">Featured Projects</h1>
+        <h1 className="pt-2 text-4xl md:text-5xl font-extrabold">
+          Featured Projects
+        </h1>
       </div>
       <div
         key={""}
@@ -58,10 +60,10 @@ export default function Home({ Allblogs }) {
             <div key={blog.createdAt}>
               <Link href={`/blogs/${blog.id}`}>
                 <div
-                  className="bg-[#27273a75] hover:bg-[#bebcbc77] cursor-pointer flex flex-col items-center justify-center  rounded-3xl  w-[450px] h-[400px] mt-10 md:w-[400px]"
+                  className="bg-[#27273a75] hover:bg-[#bebcbc77] cursor-pointer flex flex-col items-center justify-center  rounded-3xl  w-[350px] h-[400px] mt-10 md:w-[400px]"
                   key={blog.createdAt}
                 >
-                  <div className="w-[400px] md:w-[360px]">
+                  <div className="w-[300px] md:w-[360px]">
                     <Image
                       className=""
                       src={blog.imageUrl}
@@ -114,6 +116,9 @@ export default function Home({ Allblogs }) {
         ) : (
           <h3>You have reached end</h3>
         )}
+      </div>
+      <div className="pt-10 bg-[#040720]">
+        <h1></h1>
       </div>
     </div>
   );

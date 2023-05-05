@@ -19,17 +19,17 @@ export default function Blogpage({ blog, user, allComments }) {
     setAllComments(commentQuery.docs.map((docSnap) => docSnap.data()));
   };
   return (
-    <div className="container center mt-5">
-      <h2 className="mt-5 text-gray-500">{blog.title}</h2>
+    <div className="container center p-5 pt-[100px] h-screen bg-[#040720] ">
+      {/* <h2 className="mt-5 text-gray-500">{blog.title}</h2>
       <h5 className="text-gray-500 mt-5">
         Created On - {new Date(blog.createdAt).toDateString()}
-      </h5>
-      <img className="mt-5" src={blog.imageUrl} alt={blog.title} />
+      </h5> */}
+      <img className="mt-5 rounded-xl" src={blog.imageUrl} alt={blog.title} />
       <p>{blog.body}</p>
 
       {user ? (
         <>
-          <div className="input-field">
+          {/* <div className="input-field">
             <input
               type="text"
               placeholder="add a comment"
@@ -42,14 +42,14 @@ export default function Blogpage({ blog, user, allComments }) {
             onClick={() => makeCommet()}
           >
             Make comment
-          </button>
+          </button> */}
         </>
       ) : (
         <h3>please login to make comments</h3>
       )}
 
       <hr />
-      <div className="left-align">
+      {/* <div className="left-align">
         {allCommentsBlog.map((item) => {
           return (
             <h6 key={item.name}>
@@ -57,7 +57,7 @@ export default function Blogpage({ blog, user, allComments }) {
             </h6>
           );
         })}
-      </div>
+      </div> */}
 
       <style jsx global>
         {`

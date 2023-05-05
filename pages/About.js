@@ -33,7 +33,7 @@ function About() {
             I currently have two active websites and a few landing pages created
             for my apps.
           </p>
-          <div className="pl-10 bg-[#525f72b7] pt-5 rounded-xl  mt-10 mr-5 h-[200px]">
+          <div className="pl-10 bg-[#525f72b7] pt-5 rounded-xl  mt-10 mr-5 h-[240px]">
             <div className="pt-5 p-5 mix-w-[400px] text-xl text-gray-200">
               <Image src={image} width={50} height={50} alt="" />
             </div>
@@ -46,7 +46,7 @@ function About() {
               <h1 className=" text-xl text-blue-500 font-bold">View</h1>
             </Link>
           </div>
-          <div className="pl-10 bg-[#525f72b7] pt-5 rounded-xl  mt-10 mr-5 h-[200px]">
+          <div className="pl-10 bg-[#525f72b7] pt-5 rounded-xl  mt-10 mr-5 h-[240px]">
             <div className="pt-5 p-5 mix-w-[400px] text-xl text-gray-200">
               <Image src={image2} width={50} height={50} alt="" />
             </div>
