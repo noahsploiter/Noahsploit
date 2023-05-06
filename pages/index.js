@@ -65,7 +65,7 @@ export default function Home({ Allblogs }) {
                 >
                   <div className="w-[300px] md:w-[360px]">
                     <Image
-                      className=""
+                      className="rounded-xl"
                       src={blog.imageUrl}
                       alt=""
                       width={500}
