@@ -50,23 +50,25 @@ export default function Createblog({ user }) {
     );
   };
   return (
-    <div className="input-field rootdiv ">
+    <div className="bg-[#040720] h-screen flex flex-col justify-center items-center p-10">
       <h3>Create A Blog !!</h3>
       <input
+        className="p-5"
         type="text"
         value={title}
         placeholder="Title"
         onChange={(e) => setTitle(e.target.value)}
       />
       <textarea
+        className="p-5 overflow-hidden"
         type="text"
         value={body}
         placeholder="body"
         onChange={(e) => setBody(e.target.value)}
       />
-      <div className="file-field input-field">
-        <div className="btn #fb8c00 orange darken-1">
-          <span>File</span>
+      <div className="rounded-xl file-field input-field border flex flex-col justify-center items-center h-[200px] w-[300px] p-[100px] mt-[100px]">
+        <div className="w-screen flex justify-center items-center">
+          <span>Select fils or drag and drop</span>
           <input type="file" onChange={(e) => setImage(e.target.files[0])} />
         </div>
         <div className="file-path-wrapper">

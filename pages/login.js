@@ -16,7 +16,7 @@ export default function Login() {
   };
 
   return (
-    <div className="container center mt-[100px]">
+    <div className="bg-[#040720] h-screen p-10 center flex flex-col justify-center items-center">
       <h3>Plase Login!!</h3>
       <form onSubmit={(e) => handleSubmit(e)}>
         <div className="input-field">
@@ -37,9 +37,9 @@ export default function Login() {
           Login
         </button>
         <Link href="/signup">
-          <div>
+          {/* <div>
             <h5>Dont Have a account</h5>
-          </div>
+          </div> */}
         </Link>
       </form>
     </div>

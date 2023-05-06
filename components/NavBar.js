@@ -77,11 +77,11 @@ const Nav = () => {
                     About
                   </div>
                 </Link>
-                <Link href="/contact">
+                {/* <Link href="/contact">
                   <div className="text-white hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
                     Contact
                   </div>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -101,11 +101,11 @@ const Nav = () => {
                 About
               </div>
             </Link>
-            <Link href="/contact">
+            {/* <Link href="/contact">
               <div className="text-white hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">
                 Contact
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       )}

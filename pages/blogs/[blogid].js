@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { db } from "../../firebase";
 import { useRouter } from "next/router";
+import Image from "next/image";
 export default function Blogpage({ blog, user, allComments }) {
   const [myComment, setMyComment] = useState("");
   const [allCommentsBlog, setAllComments] = useState(allComments);
@@ -24,8 +25,15 @@ export default function Blogpage({ blog, user, allComments }) {
       <h5 className="text-gray-500 mt-5">
         Created On - {new Date(blog.createdAt).toDateString()}
       </h5> */}
-      <img className="mt-5 rounded-xl" src={blog.imageUrl} alt={blog.title} />
-      <p>{blog.body}</p>
+      <Image
+        width={500}
+        height={500}
+        quality={100}
+        className="mt-5 rounded-xl"
+        src={blog.imageUrl}
+        alt={blog.title}
+      />
+      <p className="mt-8">{blog.body}</p>
 
       {user ? (
         <>

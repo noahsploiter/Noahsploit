@@ -3,6 +3,7 @@ import { db } from "../firebase";
 import Link from "next/link";
 import back from "../public/b.png";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Home({ Allblogs }) {
   const [blogs, setblogs] = useState(Allblogs);
@@ -30,7 +31,21 @@ export default function Home({ Allblogs }) {
   };
   return (
     <div className="bg-[#040720] bg-[length:500px_500px] bg-right bg-[url('../public/b.png')] bg-no-repeat   h-full md:h-screen pt-[80px] ">
-      <div className="pt-[150px] pl-[20px] h-full">
+      <motion.div
+        initial={{
+          x: -200,
+          opacity: 0,
+        }}
+        transition={{
+          duration: 1.4,
+        }}
+        whileInView={{
+          x: 0,
+          opacity: 1,
+        }}
+        viewport={{ once: true }}
+        className="pt-[150px] pl-[20px] h-full"
+      >
         <h1 className="text-4xl md:text-5xl font-bold w-screen pr-10">
           Providing{" "}
           <span className="font-extrabold text-transparent text-4xl bg-clip-text bg-gradient-to-r from-purple-400 to-blue-600">
@@ -39,12 +54,12 @@ export default function Home({ Allblogs }) {
           </span>{" "}
           building experience
         </h1>
-        <p className="pt-5 text-xl text-gray-400 w-screen pr-10">
+        <p className="pt-5 text-xl text-gray-400 w-screen md:w-[500px] pr-10">
           All the best and most modern projects. Access online courses,
           projects, blogs, coding examples, tutorials and much more. All in one
           place
         </p>
-      </div>
+      </motion.div>
       <div className="bg-[#040720] pl-[60px] md:pl-[105px] pt-[100px]">
         <h1 className="text-[#3a59e4] text-2xl font-bold">PROJECTS</h1>
         <h1 className="pt-2 text-4xl md:text-5xl font-extrabold">
@@ -67,7 +82,7 @@ export default function Home({ Allblogs }) {
                     <Image
                       className="rounded-xl"
                       src={blog.imageUrl}
-                      alt=""
+                      alt="noahsploit"
                       width={500}
                       height={500}
                       quality={100}

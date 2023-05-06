@@ -42,9 +42,9 @@ function About() {
               Digital studio that specializes in creating websites and mobile
               applications.
             </p>
-            <Link href="esat-tech.com">
+            <a href="https://esat-tech.com" target="_blank">
               <h1 className=" text-xl text-blue-500 font-bold">View</h1>
-            </Link>
+            </a>
           </div>
           <div className="pl-10 bg-[#525f72b7] pt-5 rounded-xl  mt-10 mr-5 h-[240px]">
             <div className="pt-5 p-5 mix-w-[400px] text-xl text-gray-200">
@@ -54,10 +54,17 @@ function About() {
             <p className="text-gray-300 w-[250px]">
               My personal portfolio with all projects i have built.
             </p>
-            <Link href="esat-tech.com">
+            <a href="https://noah-beta.vercel.app" target="_blank">
               <h1 className=" text-xl text-blue-500 font-bold">View</h1>
-            </Link>
+            </a>
           </div>
+          <a
+            href="https://github.com/noahsploiter"
+            target="_blank"
+            className=""
+          >
+            <h1 className="mt-8 text-xl text-blue-500 font-bold">Gihub</h1>
+          </a>
         </div>
         <div className="mt-10"></div>
       </div>
